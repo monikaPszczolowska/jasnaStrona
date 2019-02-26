@@ -1,0 +1,112 @@
+/*
+font-family: 'Mrs Saint Delafield', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.header {
+  background-image: url(/images/lifeguard-1209187_1920.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header .header__menu {
+  font-size: 2rem;
+  padding: 3rem 2rem;
+}
+
+.header .hamburger-button-hidden {
+  display: none;
+}
+
+.header .mobile-menu-open {
+  width: 30vh;
+}
+
+.header .nav .nav__list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10em;
+  z-index: 100;
+  list-style: none;
+}
+
+.header .nav__title {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.header .nav__subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.social .social__list {
+  height: 35vh;
+  list-style: none;
+  padding: 1rem;
+}
+
+.social .social__list .social__list-item {
+  height: 25%;
+  font-size: 2rem;
+}
+
+.social .social__list .social__list-item:hover {
+  font-size: 1.5rem;
+}
+
+.social .social__list .social__list-item .social__link {
+  text-decoration: none;
+}
+
+.social .social__list .social__list-item .social__link .fa-facebook-square {
+  color: #3b5998;
+}
+
+.social .social__list .social__list-item .social__link .fa-twitter-square {
+  color: #00aced;
+}
+
+.social .social__list .social__list-item .social__link .fa-instagram {
+  color: #c32aa3;
+}
+
+.social .social__list .social__list-item .social__link .fa-pinterest-square {
+  color: #bd081c;
+}
+/*# sourceMappingURL=main.css.map */
