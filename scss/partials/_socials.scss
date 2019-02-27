@@ -4,12 +4,12 @@
     right: 0;
 
     .social__list {
-        height: 35vh;
+        height: 50vh;
         list-style: none;
         padding: 1rem;
 
         .social__list-item {
-            height: 25%;
+            height: 20%;
             font-size: 2rem;
 
             &:hover {
@@ -18,6 +18,10 @@
 
             .social__link {
                 text-decoration: none;
+
+                .fa-github-square {
+                    color: black;
+                }
 
                 .fa-facebook-square {
                     color: #3b5998;
@@ -42,7 +46,7 @@
 @media (orientation: landscape) {
     .social {
         .social__list {
-            height: 50vh;
+            height: 100vh;
         }
     }
 }

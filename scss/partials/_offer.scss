@@ -1,0 +1,5 @@
+.offer {
+    .offer__title {
+        @include section-title (white);
+    }
+}

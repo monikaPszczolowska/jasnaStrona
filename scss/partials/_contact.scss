@@ -1,0 +1,34 @@
+.contact {
+    .contact__title {
+        @include section-title (white);
+    }
+
+    .contact__img {
+        background-image: url(/images/003_400x600.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contact__data {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        letter-spacing: 0.2rem;
+    }
+
+    .contact__form {
+        padding: 1rem;
+
+        input,
+        textarea {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+    }
+}

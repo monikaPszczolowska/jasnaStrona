@@ -1,6 +1,6 @@
 .about {
     .about__title {
-        text-transform: uppercase;
+        @include section-title(white);
     }
 
     .about__me {
@@ -12,7 +12,8 @@
         }
 
         .about__text {
-            padding: 1em;
+            padding: 1rem 2rem;
+            background-color: white;
         }
     }
 }

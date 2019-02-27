@@ -1,8 +1,10 @@
 @import "modules/all";
+@import "partials/mixins";
 @import "partials/base";
 @import "partials/header";
 @import "partials/socials";
 @import "partials/about";
-// @import "partials/portfolio";
-// @import "partials/contact";
-// @import "partials/footer";
+@import "partials/portfolio";
+@import "partials/offer";
+@import "partials/contact";
+@import "partials/footer";
