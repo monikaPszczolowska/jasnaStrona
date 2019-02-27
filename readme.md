@@ -1,5 +1,5 @@
 # Project Name
-Jasna Stona
+Jasna Strona
 
 ## Table of contents
 * [General info](#general-info)

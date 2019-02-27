@@ -1,0 +1,18 @@
+.about {
+    .about__title {
+        text-transform: uppercase;
+    }
+
+    .about__me {
+        display: flex;
+        flex-direction: column;
+
+        .about__img {
+            width: 100vw;
+        }
+
+        .about__text {
+            padding: 1em;
+        }
+    }
+}

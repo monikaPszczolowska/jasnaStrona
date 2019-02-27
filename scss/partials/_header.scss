@@ -9,16 +9,15 @@
     background-attachment: fixed;
 
     .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
         font-size: 2rem;
-        padding: 3rem 2rem;
+        padding: 2rem;
     }
 
     .hamburger-button-hidden {
         display: none;
-    }
-
-    .mobile-menu-open {
-        width: 30vh;
     }
 
     .nav {
@@ -28,32 +27,53 @@
             right: 0;
             width: 0;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            margin-top: 10em;
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: 100;
             list-style: none;
 
+            .nav__list-item {
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-transform: uppercase;
 
+                .nav__link {
+                    padding-left: 1rem;
+                    line-height: 150%;
+                    color: white;
+                    list-style: none;
+                    text-decoration: none;
+                }
+            }
         }
 
-
+        .mobile-menu-open {
+            width: 50vw;
+        }
     }
 
-    .nav__title {
+    .header__title {
         font-family: 'Mrs Saint Delafield', cursive;
         font-weight: 400;
         font-size: 5rem;
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 6rem;
 
     }
 
-    .nav__subtitle {
+    .header__subtitle {
         font-family: 'Oswald', sans-serif;
         font-size: 1rem;
         text-transform: uppercase;
         text-align: center;
     }
+}
 
-
+@media (orientation: landscape) {
+    .header {
+        .nav {
+            .mobile-menu-open {
+                width: 30vw;
+            }
+        }
+    }
 }

@@ -30,16 +30,15 @@ body {
 }
 
 .header .header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
   font-size: 2rem;
-  padding: 3rem 2rem;
+  padding: 2rem;
 }
 
 .header .hamburger-button-hidden {
   display: none;
-}
-
-.header .mobile-menu-open {
-  width: 30vh;
 }
 
 .header .nav .nav__list {
@@ -48,25 +47,48 @@ body {
   right: 0;
   width: 0;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 10em;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
   list-style: none;
 }
 
-.header .nav__title {
+.header .nav .nav__list .nav__list-item {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header .nav .nav__list .nav__list-item .nav__link {
+  padding-left: 1rem;
+  line-height: 150%;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header .nav .mobile-menu-open {
+  width: 50vw;
+}
+
+.header .header__title {
   font-family: 'Mrs Saint Delafield', cursive;
   font-weight: 400;
   font-size: 5rem;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 6rem;
 }
 
-.header .nav__subtitle {
+.header .header__subtitle {
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (orientation: landscape) {
+  .header .nav .mobile-menu-open {
+    width: 30vw;
+  }
 }
 
 .social {
@@ -108,5 +130,33 @@ body {
 
 .social .social__list .social__list-item .social__link .fa-pinterest-square {
   color: #bd081c;
+}
+
+@media (orientation: landscape) {
+  .social .social__list {
+    height: 50vh;
+  }
+}
+
+.about .about__title {
+  text-transform: uppercase;
+}
+
+.about .about__me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about__me .about__img {
+  width: 100vw;
+}
+
+.about .about__me .about__text {
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */

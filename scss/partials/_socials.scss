@@ -38,3 +38,11 @@
         }
     }
 }
+
+@media (orientation: landscape) {
+    .social {
+        .social__list {
+            height: 50vh;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var menu = document.querySelector('.nav__list');
-    var button = document.querySelector('.header__menu');
-    var mediaQuery = window.matchMedia('(min-width: 700px)');
+    const menu = document.querySelector('.nav__list');
+    const button = document.querySelector('.header__menu');
+    const mediaQuery = window.matchMedia('(min-width: 700px)');
 
     function goToMobile() {
         button.classList.remove('hamburger-button-hidden');
