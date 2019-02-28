@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  background-image: url(/images/lifeguard-1920.jpg);
+  background-image: url(../images/lifeguard-1920.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -397,7 +397,7 @@ body {
 }
 
 .contact .contact__field .contact__img {
-  background-image: url(/images/003_400x600.jpg);
+  background-image: url(../images/003_400x600.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
