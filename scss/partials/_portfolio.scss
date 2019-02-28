@@ -1,6 +1,6 @@
 .portfolio {
     .portfolio__title {
-        @include section-title (#E4E4E4)
+        @include section-title ($main-color)
     }
 
     .project {
@@ -28,14 +28,12 @@
         }
 
         .project__sample {
-            padding: 2rem;
-            margin: auto;
-            background-image: url(/images/paper_640.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            padding: 1rem 3rem;
+            background-color: $pinkish-color;
             flex-basis: 75%;
-
+            margin: 1rem;
+            border-radius: 1rem;
+            overflow: hidden;
         }
 
     }

@@ -20,7 +20,7 @@ will follow...
 ## Technologies
 * HTML
 * Sass/CSS
-* React/JS
+* ReactJS
 * RWD
 
 ## Setup

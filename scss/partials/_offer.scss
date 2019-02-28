@@ -1,5 +1,28 @@
 .offer {
+    background-color: white;
+
     .offer__title {
         @include section-title (white);
+    }
+
+    .offer__features {
+        display: flex;
+        flex-direction: column;
+
+        .offer__feature {
+            padding: 2rem 3rem;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .offer {
+        .offer__features {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }

@@ -12,8 +12,30 @@
         }
 
         .about__text {
-            padding: 1rem 2rem;
+            padding: 1rem 2.5rem;
             background-color: white;
+        }
+    }
+}
+
+@media (min-width: 701px) {
+    .about {
+        background-color: white;
+        padding-bottom: 1rem;
+
+        .about__me {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .about__img {
+                width: 50%;
+            }
+
+            .about__text {
+                flex-basis: 50%;
+            }
         }
     }
 }
