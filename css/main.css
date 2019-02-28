@@ -15,6 +15,11 @@ font-family: 'Oswald', sans-serif;
   clear: both;
 }
 
+.center {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
   background-color: #EEEEF3;
@@ -82,7 +87,7 @@ body {
   font-weight: 400;
   font-size: 5rem;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .header .header__subtitle {
