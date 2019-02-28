@@ -36,4 +36,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
+    const prevBtn = document.querySelector('.fa-angle-left');
+    console.log(prevBtn)
+    const nextBtn = document.querySelector('.fa-angle-right');
+    const listOfSamples = document.querySelectorAll('.project__sample');
+    console.log(listOfSamples)
+
+    let sampleIndex = 0;
+
+    listOfSamples[sampleIndex].classList.add('visible');
+
+
+    nextBtn.addEventListener('click', function () {
+        listOfSamples[sampleIndex].classList.remove('visible');
+        if (sampleIndex >= listOfSamples.length - 1) {
+            sampleIndex = 0;
+        } else {
+            sampleIndex++;
+        }
+        listOfSamples[sampleIndex].classList.add('visible');
+    });
+
+    prevBtn.addEventListener('click', function () {
+        listOfSamples[sampleIndex].classList.remove('visible');
+        if (sampleIndex <= 0) {
+            sampleIndex = (listOfSamples.length - 1);
+        } else {
+            sampleIndex--;
+        }
+        listOfSamples[sampleIndex].classList.add('visible');
+    });
+
 });

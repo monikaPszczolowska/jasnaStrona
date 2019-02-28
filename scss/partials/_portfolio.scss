@@ -28,12 +28,36 @@
         }
 
         .project__sample {
+            display: none;
             padding: 1rem 3rem;
-            background-color: $pinkish-color;
+            background-color: $second-color;
             flex-basis: 75%;
             margin: 1rem;
             border-radius: 1rem;
             overflow: hidden;
+        }
+
+        .visible {
+            display: inline-block;
+        }
+
+    }
+}
+
+@media (min-width: 701px) {
+    .portfolio {
+
+        .project {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+
+
+            .project__description {
+                flex-basis: 30%;
+                align-self: flex-start;
+            }
         }
 
     }
