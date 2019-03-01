@@ -37,6 +37,10 @@
                 padding: 0.5rem;
                 margin: 0.5rem 0;
             }
+
+            input[type=submit] {
+                @include main-button ($pinkish-color, white)
+            }
         }
     }
 }

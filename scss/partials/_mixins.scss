@@ -3,3 +3,14 @@
     text-transform: uppercase;
     background-color: $bgcolor;
 }
+
+
+@mixin main-button ($bgcolor, $color) {
+    background-color: $bgcolor;
+    font-size: 1em;
+    color: $color;
+    text-transform: uppercase;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    border: none;
+}
