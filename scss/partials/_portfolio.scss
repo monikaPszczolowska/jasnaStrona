@@ -7,13 +7,15 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
 
-        .project__description {
+
+        .project__description-net,
+        .project__description-blog,
+        .project__description-adv {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-basis: 25%;
+            flex-basis: 33%;
 
             .fa-angle-left,
             .fa-angle-right {
@@ -25,9 +27,17 @@
         .project__title {
             padding: 1rem 0;
             text-align: center;
+
+            h3 {
+                font-weight: 400;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
         }
 
-        .project__sample {
+        .project__sample-blog,
+        .project__sample-net,
+        .project__sample-adv {
             display: none;
             padding: 1rem 3rem;
             background-color: $second-color;
@@ -40,24 +50,5 @@
         .visible {
             display: inline-block;
         }
-    }
-}
-
-@media (min-width: 701px) {
-    .portfolio {
-
-        .project {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: stretch;
-
-
-            .project__description {
-                flex-basis: 30%;
-                align-self: flex-start;
-            }
-        }
-
     }
 }

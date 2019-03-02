@@ -274,10 +274,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  height: 100vh;
 }
 
-.portfolio .project .project__description {
+.portfolio .project .project__description-net,
+.portfolio .project .project__description-blog,
+.portfolio .project .project__description-adv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,12 +288,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
 }
 
-.portfolio .project .project__description .fa-angle-left,
-.portfolio .project .project__description .fa-angle-right {
+.portfolio .project .project__description-net .fa-angle-left,
+.portfolio .project .project__description-net .fa-angle-right,
+.portfolio .project .project__description-blog .fa-angle-left,
+.portfolio .project .project__description-blog .fa-angle-right,
+.portfolio .project .project__description-adv .fa-angle-left,
+.portfolio .project .project__description-adv .fa-angle-right {
   font-size: 2rem;
   padding: 1rem;
 }
@@ -302,7 +307,15 @@ body {
   text-align: center;
 }
 
-.portfolio .project .project__sample {
+.portfolio .project .project__title h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.portfolio .project .project__sample-blog,
+.portfolio .project .project__sample-net,
+.portfolio .project .project__sample-adv {
   display: none;
   padding: 1rem 3rem;
   background-color: #91C4BC;
@@ -315,30 +328,6 @@ body {
 
 .portfolio .project .visible {
   display: inline-block;
-}
-
-@media (min-width: 701px) {
-  .portfolio .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
-  .portfolio .project .project__description {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
 }
 
 .offer {
@@ -468,5 +457,6 @@ body {
 .footer {
   text-align: center;
   font-size: 0.7rem;
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
